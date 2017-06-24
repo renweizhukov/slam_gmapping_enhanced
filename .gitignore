@@ -1,32 +1,22 @@
-# Prerequisites
-*.d
+# catkin_make files
+build_isolated/
+devel/
+devel_isolated/
+el/
+el_isolated/
+install_isolated/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# RoboWare Studio files
+.vscode
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+.cproject
+.project
+.pydevproject
+cmake_install.cmake
+build/
+bin/
+lib/
+msg_gen/
+srv_gen/
+*.pyc
+*~

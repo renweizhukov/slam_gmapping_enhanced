@@ -219,7 +219,6 @@ private:
     // 
     std::unique_ptr<GMapping::GridSlamProcessor> m_gsp;
     std::unique_ptr<GMapping::RangeSensor> m_gspLaser;
-    std::unique_ptr<GMapping::OdometrySensor> m_gspOdom;
     unsigned long int m_samplingSeed;
 
     //

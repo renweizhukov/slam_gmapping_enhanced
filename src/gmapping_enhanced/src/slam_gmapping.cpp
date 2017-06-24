@@ -425,9 +425,6 @@ bool SlamGMapping::InitGMapping(const sensor_msgs::LaserScan& scan)
     smap.insert(make_pair(m_gspLaser->getName(), m_gspLaser.get()));
     m_gsp->setSensorMap(smap);
 
-    m_gspOdom.reset(new GMapping::OdometrySensor(m_odomFrame));
-    ROS_ASSERT(m_gspOdom);
-
     /// TODO: Expose an initial pose as a private parameter.
     // Note that although the initial pose is in the odom frame, it is identical to the pose in the 
     // map frame since the map frame superposes the odom frame at the beginning.
